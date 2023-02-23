@@ -1,0 +1,26 @@
+
+<form  >
+    <div class="mt-5 container border border-white w-50 bg-dark text-white">
+        <h1 class="text-center text-white">Sign Up</h1>
+    
+        <div class="mt-2 p-2 text-center">
+            <input name="uname"   id="uid" type="text" placeholder="Enter Username" [(ngModel)]="registerObj.uname">
+        </div>
+        
+        
+        <div class="mt-2 p-2 text-center ">
+            <input name="email"  [(ngModel)]="registerObj.email" id="eid" type="text" placeholder="Enter id" >
+        </div>
+        
+
+           <div class="mt-2 p-2 text-center ">
+            <input name="psw"   [(ngModel)]="registerObj.psw"    id="pid" type="text" placeholder="enter password">
+        </div>
+       
+        <div class="mt-2 p-2 text-center">
+            <button type="submit"  (click)="onSignUp()" class="btn btn-outline-light">Sign Up</button><br><br>
+           
+        </div>
+</div>
+</form>
+

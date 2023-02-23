@@ -1,0 +1,20 @@
+
+<form  >
+    <div class="mt-5 container border border-white w-50 bg-dark text-white">
+        <h1 class="text-center">Login Form</h1>
+    
+        <div class="mt-2 text-center p-2">
+            <input name="uname" [(ngModel)]="loginObj.uname"  id="uid" type="text" placeholder="Enter Username">
+        </div>
+        
+          <div class="mt-2 text-center p-2">
+            <input name="psw" [(ngModel)]="loginObj.psw"    id="pid" type="text" placeholder="enter password">
+        </div>
+       
+        <div class="mt-2 p-2 text-center">
+            <button type="submit" (click)="onLogin()"   class="btn btn-outline-light">Login</button><br><br>
+            <p>New User? <a routerLink="register">register</a></p>
+           
+        </div>
+</div>
+</form>
